@@ -22,18 +22,6 @@ arduino-cli core update-index --config-file .arduino-cli.yaml
 arduino-cli core install esp32:esp32 --config-file .arduino-cli.yaml
 
 # Install 'native' packages
-arduino-cli lib install "Adafruit BME280 Library"
-arduino-cli lib install "Adafruit Unified Sensor"
-arduino-cli lib install "HCSR04 ultrasonic sensor"
-arduino-cli lib install "ArduinoJson"
-arduino-cli lib install "MPU9250_asukiaaa"
-cd -
-
-# Install 'third-party' packages: find proper location and 'git clone'
-sudo apt-get install git -y
-cd `arduino-cli config dump | grep sketchbook | sed 's/.*\ //'`/libraries
-git clone https://github.com/me-no-dev/AsyncTCP.git
-git clone https://github.com/me-no-dev/ESPAsyncWebServer.git
-git clone https://github.com/ThingPulse/esp8266-oled-ssd1306.git
-git clone https://github.com/RoboticsBrno/ESP32-Arduino-Servo-Library.git
+arduino-cli lib install "Adafruit CCS811 Library"
+arduino-cli lib install "lcdgfx"
 cd -
