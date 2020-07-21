@@ -1,3 +1,5 @@
+![CI](https://github.com/YasithLokuge/Esp32AirQualityDisplay/workflows/CI/badge.svg?branch=master)
+
 ## Esp32 based Air Quality Display
 
 ### Components
